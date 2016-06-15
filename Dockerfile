@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum -y install openssh-server epel-release && \
+RUN yum -y install openssh-server epel-release docker && \
     yum install -y pwgen supervisor nano net-tools less wget bash-completion git && \
 	yum clean all && \
     rm -f /etc/ssh/ssh_host_ecdsa_key /etc/ssh/ssh_host_rsa_key && \
