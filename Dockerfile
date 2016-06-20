@@ -20,7 +20,7 @@ COPY supervisord.conf /supervisord.conf
 
 ENV AUTHORIZED_KEYS **None**
 
-EXPOSE 22
+EXPOSE 22 80 443 4444 24245
 
 
 # Define additional metadata for our image.
